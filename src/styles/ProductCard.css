@@ -1,0 +1,27 @@
+.card {
+  @apply flex items-center gap-4 p-4 border rounded shadow hover:shadow-md transition;
+}
+
+.card-serial {
+  @apply w-6 text-gray-600 font-medium;
+}
+
+.card-img {
+  @apply w-20 h-20 object-cover rounded;
+}
+
+.card-content {
+  @apply flex-1;
+}
+
+.card-title {
+  @apply text-lg font-semibold;
+}
+
+.card-subtitle {
+  @apply text-gray-500;
+}
+
+.card-price {
+  @apply text-blue-600 font-bold;
+}
