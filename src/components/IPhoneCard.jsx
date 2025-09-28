@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/ProductCard.css";
 
-const ProductCard = ({ serial, image, title, subtitle, price }) => {
+//Conditional Rendering with &&
+const IPhoneCard = ({ serial, image, title, subtitle, price }) => {
   return (
     <div className="card">
       <span className="card-serial">{serial}.</span>
@@ -15,4 +16,4 @@ const ProductCard = ({ serial, image, title, subtitle, price }) => {
   );
 };
 
-export default ProductCard;
+export default IPhoneCard;
