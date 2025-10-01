@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/ProductCard.css";
 
-//Conditional Rendering with &&
+//Conditional Rendering with Ternary Operators
 const LaptopCard = ({ serial, image, title, subtitle, price }) => {
   return (
     <div className="card">

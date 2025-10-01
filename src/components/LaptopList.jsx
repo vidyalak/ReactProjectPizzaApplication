@@ -33,10 +33,8 @@ const LaptopList = () => {
 
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Products</h1>
-
       {products && products.length > 0 ? (
-        <div className="grid gap-4">
+        <div className="product-grid">
           {products.map((product, index) => (
             <ProductCard
               key={product.id}

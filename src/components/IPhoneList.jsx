@@ -2,6 +2,7 @@ import React from "react";
 import ProductCard from "./IPhoneCard";
 import IPhoneCard from "./IPhoneCard";
 
+/* ✅ Conditional Rendering using && */
 const IPhoneList = () => {
   const products = [
     {
@@ -29,11 +30,8 @@ const IPhoneList = () => {
 
  return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Products</h1>
-
-      {/* ✅ Conditional Rendering using && */}
       {products && products.length > 0 && (
-        <div className="grid gap-4">
+        <div className="product-grid">
           {products.map((product, index) => (
             <IPhoneCard
               key={product.id}
