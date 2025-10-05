@@ -1,0 +1,81 @@
+.travel-container {
+  max-width: 450px;
+  margin: 80px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.travel-container h2 {
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 200px;
+}
+
+.input-section button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.input-section button:hover {
+  background-color: #1e40af;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.item-list li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.strike-black {
+  text-decoration: line-through;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cross-icon {
+  cursor: pointer;
+  color: red;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.cross-icon:hover {
+  transform: scale(1.2);
+}
+
+.error {
+  color: #dc2626;
+  font-weight: 600;
+  margin-top: 10px;
+}
