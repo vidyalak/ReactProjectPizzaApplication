@@ -6,6 +6,8 @@ import ProfileResumeCard from "./components/ProfileResumeCard";
 import StateStepForm from "./components/StateStepForm";
 import StateCounterApp from "./components/StateCounterApp";
 import TravelList from "./components/TravelList";
+import FlashCard from "./components/FlashCard";
+import CounterProgress from "./components/CounterProgress";
 
 function App() {
   return (
@@ -24,6 +26,11 @@ function App() {
       <StateCounterApp />
       <h1>Travel Checklist</h1>
       <TravelList />
+      <h1>FlashCard Example</h1>
+      <FlashCard />
+      <h1>Counter with Progress Bar</h1>
+      <CounterProgress/>
+
     </div>
   );
 }

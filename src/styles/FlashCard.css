@@ -1,0 +1,73 @@
+.flashcard-wrapper {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+/* Header */
+.flashcard-wrapper h2 {
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+/* Card grid layout */
+.flashcard-wrapper .flashcard-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual card */
+.flashcard-wrapper .flashcard {
+  width: 150px;
+  height: 100px;
+  background-color: #f1f5f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.flashcard-wrapper .flashcard-title {
+  z-index: 1;
+}
+
+.flashcard-wrapper .flashcard-text {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  animation: flashcard-flash 0.4s alternate infinite;
+  z-index: 2;
+}
+
+/* Flash animation for hover */
+@keyframes flashcard-flash {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+/* Red flash for Animal */
+.flashcard-wrapper .flashcard.animal {
+  background-color: red;
+  color: white;
+  animation: flashcard-flash 0.4s alternate infinite;
+}
+
+/* Green flash for Bird */
+.flashcard-wrapper .flashcard.bird {
+  background-color: green;
+  color: white;
+  animation: flashcard-flash 0.4s alternate infinite;
+}
