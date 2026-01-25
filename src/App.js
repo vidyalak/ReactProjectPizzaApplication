@@ -10,6 +10,7 @@ import FlashCard from "./components/FlashCard";
 import CounterProgress from "./components/CounterProgress";
 import Pagination from "./components/Pagination";
 import EatSplit from "./components/split/EatSplit";
+import StarRating from "./components/starRating/StarRating";
 
 
 function App() {
@@ -52,6 +53,8 @@ function App() {
       )} : {page === 2 && (
         <>
         <EatSplit />
+        <h1>Five Star Rating</h1>
+        <StarRating/>
               </>
       )}
 

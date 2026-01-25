@@ -1,0 +1,26 @@
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.star-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.star {
+  font-size: 32px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  line-height: 1;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+.message {
+  font-weight: bold;
+  margin-top: 6px;
+}
