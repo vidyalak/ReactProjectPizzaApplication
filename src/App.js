@@ -11,7 +11,7 @@ import CounterProgress from "./components/CounterProgress";
 import Pagination from "./components/Pagination";
 import EatSplit from "./components/split/EatSplit";
 import StarRating from "./components/starRating/StarRating";
-
+import DynamicTabs from "./components/TabParagraphContent/DynamicTabs";
 
 function App() {
   const [page, setPage] = useState(1); // Default Page 1
@@ -50,15 +50,20 @@ function App() {
           <h1>Counter with Progress Bar</h1>
           <CounterProgress />
         </>
-      )} : {page === 2 && (
+      )}{" "}
+      :{" "}
+      {page === 2 && (
         <>
-        <EatSplit />
-        <h1>Five Star Rating</h1>
-        <StarRating/>
-              </>
-      )}
+          <h1>Pizza Order Splitter</h1>
+          <EatSplit />
 
-      
+          <h1>Five Star Rating</h1>
+          <StarRating />
+
+          <h1>Dynamic Paragraph Content</h1>
+          <DynamicTabs />
+        </>
+      )}
     </div>
   );
 }

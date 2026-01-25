@@ -1,0 +1,157 @@
+/* Page Container */
+.dynamic-tabs-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #111827;
+  text-align: center;
+}
+
+/* Wrapper */
+.tabs-wrapper {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tabs */
+.tabs {
+  width: 100%;
+  display: flex;
+  background: #f5f7ff;
+  border-radius: 14px;
+  padding: 6px;
+  margin-bottom: 40px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 14px 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  color: #4b5563;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background: #e8ecf7;
+}
+
+.tab-btn.active {
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Like Button */
+.like-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: #f3f4f6;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.like-btn.liked {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.like-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Toggle Button */
+.toggle-btn {
+  border: none;
+  background: #eef2ff;
+  color: #3730a3;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background: #e0e7ff;
+}
+
+/* Content */
+.card-content {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4b5563;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .card {
+    max-width: 100%;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: center;
+  }
+}
